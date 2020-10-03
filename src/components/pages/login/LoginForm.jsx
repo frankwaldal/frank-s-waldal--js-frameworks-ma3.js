@@ -14,7 +14,7 @@ export default function LoginForm() {
   const { register, handleSubmit, errors } = useForm({
     resolver: yupResolver(schema)
   });
-  const [isLoggedIn, setIsLogged] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const usernameInputStyles = {
     border: errors.username ? '2px solid #872737' : '',
@@ -28,7 +28,7 @@ export default function LoginForm() {
   }
 
   function login() {
-    setIsLogged(true);
+    setIsLoggedIn(true);
   }
 
   return (
